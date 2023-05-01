@@ -29,29 +29,29 @@ class Application:
         self.current_image = None
         self.current_image2 = None
 
-        self.json_file = open("/home/mappy/Documents/Sign-Language-to-Text-Conversion-main/Source Code/model/model-bw.json", "r")
+        self.json_file = open("model/model-bw.json", "r")
         self.model_json = self.json_file.read()
         self.json_file.close()
         self.loaded_model = model_from_json(self.model_json)
-        self.loaded_model.load_weights("/home/mappy/Documents/Sign-Language-to-Text-Conversion-main/Source Code/model/model-bw.h5")
+        self.loaded_model.load_weights("model/model-bw.h5")
 
-        self.json_file_dru = open("/home/mappy/Documents/Sign-Language-to-Text-Conversion-main/Source Code/model/model-bw_dru.json", "r")
+        self.json_file_dru = open("model/model-bw_dru.json", "r")
         self.model_json_dru = self.json_file_dru.read()
         self.json_file_dru.close()
         self.loaded_model_dru = model_from_json(self.model_json_dru)
-        self.loaded_model_dru.load_weights("/home/mappy/Documents/Sign-Language-to-Text-Conversion-main/Source Code/model/model-bw_dru.h5")
+        self.loaded_model_dru.load_weights("model/model-bw_dru.h5")
 
-        self.json_file_tkdi = open("/home/mappy/Documents/Sign-Language-to-Text-Conversion-main/Source Code/model/model-bw_tkdi.json", "r")
+        self.json_file_tkdi = open("model/model-bw_tkdi.json", "r")
         self.model_json_tkdi = self.json_file_tkdi.read()
         self.json_file_tkdi.close()
         self.loaded_model_tkdi = model_from_json(self.model_json_tkdi)
-        self.loaded_model_tkdi.load_weights("/home/mappy/Documents/Sign-Language-to-Text-Conversion-main/Source Code/model/model-bw_tkdi.h5")
+        self.loaded_model_tkdi.load_weights("model/model-bw_tkdi.h5")
 
-        self.json_file_smn = open("/home/mappy/Documents/Sign-Language-to-Text-Conversion-main/Source Code/model/model-bw_smn.json", "r")
+        self.json_file_smn = open("model/model-bw_smn.json", "r")
         self.model_json_smn = self.json_file_smn.read()
         self.json_file_smn.close()
         self.loaded_model_smn = model_from_json(self.model_json_smn)
-        self.loaded_model_smn.load_weights("/home/mappy/Documents/Sign-Language-to-Text-Conversion-main/Source Code/model/model-bw_smn.h5")
+        self.loaded_model_smn.load_weights("model/model-bw_smn.h5")
 
         self.ct = {}
         self.ct['blank'] = 0
