@@ -19,9 +19,7 @@ classifier.add(MaxPooling2D(pool_size=(2, 2)))
 classifier.add(Convolution2D(32, (3, 3), activation='relu'))
 # input_shape is going to be the pooled feature maps from the previous convolution layer
 classifier.add(MaxPooling2D(pool_size=(2, 2)))
-#classifier.add(Convolution2D(32, (3, 3), activation='relu'))
-# input_shape is going to be the pooled feature maps from the previous convolution layer
-#classifier.add(MaxPooling2D(pool_size=(2, 2)))
+
 
 # Flattening the layers
 classifier.add(Flatten())
